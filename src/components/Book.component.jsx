@@ -12,8 +12,18 @@ function Book({ book }) {
   );
 }
 
+Book.defaultProps = {
+  book: {
+    title: '',
+    author: '',
+  }
+};
+
 Book.propTypes = {
-  book: PropTypes.object,
-}
+  book: PropTypes.shape({
+    title: PropTypes.string,
+    author: PropTypes.string,
+  }),
+};
 
 export default Book;
