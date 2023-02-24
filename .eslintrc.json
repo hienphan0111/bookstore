@@ -22,8 +22,6 @@
   },
   "ignorePatterns": [
     "dist/",
-    "build/",
-    "*.test.jsx",
-    "*.test.js"
+    "build/"
   ]
 }
