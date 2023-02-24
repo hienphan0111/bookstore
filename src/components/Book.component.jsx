@@ -16,7 +16,7 @@ Book.defaultProps = {
   book: {
     title: '',
     author: '',
-  }
+  },
 };
 
 Book.propTypes = {
