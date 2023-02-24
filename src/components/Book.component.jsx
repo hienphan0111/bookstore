@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Book = ({ book }) => {
   const { title, author } = book;
 
@@ -9,5 +11,11 @@ const Book = ({ book }) => {
     </div>
   );
 };
+
+Book.PropTypes = {
+  book: PropTypes.object,
+  title: PropTypes.string,
+  author: PropTypes.string,
+}
 
 export default Book;
