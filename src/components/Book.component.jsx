@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const Book = ({ book }) => {
+function Book ({ book }) {
   const { title, author } = book;
 
   return (
