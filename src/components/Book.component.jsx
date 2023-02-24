@@ -12,11 +12,4 @@ function Book({ book }) {
   );
 };
 
-Book.PropTypes = {
-  book: PropTypes.shape({
-    title: PropTypes.string,
-    author: PropTypes.string,
-  }),
-}
-
 export default Book;
