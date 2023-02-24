@@ -12,10 +12,11 @@ const Book = ({ book }) => {
   );
 };
 
-Book.PropTypes = {
-  book: PropTypes.object,
-  title: PropTypes.string,
-  author: PropTypes.string,
+static Book.PropTypes = {
+  book: PropTypes.shape({
+    title: PropTypes.string,
+    author: PropTypes.string,
+  }),
 }
 
 export default Book;
