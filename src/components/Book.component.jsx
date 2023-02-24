@@ -10,6 +10,10 @@ function Book({ book }) {
       <button type="button">Remove</button>
     </div>
   );
-};
+}
+
+Book.propTypes = {
+  book: PropTypes.object,
+}
 
 export default Book;
