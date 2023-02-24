@@ -18,6 +18,6 @@ const Books = () => {
       <Form />
     </div>
   );
-}
+};
 
 export default Books;

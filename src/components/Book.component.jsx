@@ -8,6 +8,6 @@ const Book = ({ book }) => {
       <button type="button">Remove</button>
     </div>
   );
-}
+};
 
 export default Book;
