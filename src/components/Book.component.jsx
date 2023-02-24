@@ -12,7 +12,7 @@ const Book = ({ book }) => {
   );
 };
 
-static Book.PropTypes = {
+Book.PropTypes = {
   book: PropTypes.shape({
     title: PropTypes.string,
     author: PropTypes.string,
