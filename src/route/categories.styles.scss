@@ -1,0 +1,28 @@
+.categories {
+  padding: 50px;
+  background-color: rgba(6, 6, 6, 0.036);
+  display: flex;
+  align-items: center;
+
+  input {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  button {
+    padding: 10px 25px;
+    margin: 10px;
+    font-family: 'Heebo', sans-serif;
+    background-color: rgb(47, 136, 238);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: #fff;
+      color: rgb(47, 136, 238);
+      border: rgb(47, 136, 238);
+    }
+  }
+}

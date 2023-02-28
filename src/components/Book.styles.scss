@@ -1,0 +1,25 @@
+.book-container {
+  padding: 10px;
+  margin: 15px 10px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0, rgba(27, 31, 35, 0.15) 0 0 0 1px;
+
+  button {
+    padding: 10px 25px;
+    font-family: 'Heebo', sans-serif;
+    background-color: rgb(47, 136, 238);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: #fff;
+      color: rgb(47, 136, 238);
+      border: rgb(47, 136, 238);
+    }
+  }
+}
