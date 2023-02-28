@@ -1,19 +1,15 @@
 import Book from 'components/Book.component';
 import Form from 'components/Form.component';
+import { useSelector } from 'react-redux';
+import './books.styles.scss';
 
 function Books() {
-  const books = [
-    {
-      id: 0,
-      title: 'The Hunger Games',
-      author: 'Suzzanne Collins',
-    },
-  ];
+  const { booksGallery } = useSelector((state) => state.books);
 
   return (
     <div className="books">
       {
-        books.map((book) => (<Book key={book.id} book={book} />))
+        booksGallery.map((book) => (<Book key={book.item_id} book={book} />))
       }
       <Form />
     </div>

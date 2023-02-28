@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&family=Rubik+Mono+One&display=swap');
+
 .App {
-  text-align: center;
+  margin: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-family: 'Heebo', sans-serif;
 }

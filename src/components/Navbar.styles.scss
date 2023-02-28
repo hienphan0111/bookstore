@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
 .navbar-container {
   display: flex;
   flex-direction: column;
+  
 
   .bar {
     display: flex;
@@ -8,6 +11,8 @@
 
     h1 {
       padding: 10px;
+      font-family: 'Rubik Mono One', sans-serif;
+      color: rgb(9, 84, 169);
     }
 
     .links {
@@ -17,5 +22,9 @@
         color: #000;
       }
     }
+  }
+
+  .outlet {
+    padding: 50px;
   }
 }
