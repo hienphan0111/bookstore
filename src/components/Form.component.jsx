@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { addBook } from 'redux/books/booksSlice';
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import './form.styles.scss';
 
 function Form() {
@@ -26,6 +27,7 @@ function Form() {
     if (title && author) {
       dispatch(addBook({
         ...book,
+        item_id: uuidv4(),
         title,
         author,
       }));

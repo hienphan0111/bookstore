@@ -30,20 +30,12 @@ const booksSlice = createSlice({
   name: 'books',
   initialState,
   reducers: {
-    addBook: (state, actions) => {
-      const itemId = 'item'.concat((state.booksGallery.length + 1).toString());
-      const book = {
-        ...actions.payload,
-        item_id: itemId,
-      };
-
-      return {
-        booksGallery: [...state.booksGallery, book],
-      };
+    addBook: (state, action) => {
+      state.booksGallery = [...state.booksGallery, action.payload];
     },
 
-    removeBook: (state, actions) => {
-      const result = state.booksGallery.filter((book) => book.item_id !== actions.payload);
+    removeBook: (state, action) => {
+      const result = state.booksGallery.filter((book) => book.item_id !== action.payload);
       return {
         booksGallery: result,
       };
