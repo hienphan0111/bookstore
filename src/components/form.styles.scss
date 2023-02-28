@@ -7,9 +7,11 @@
   .form-title {
     text-transform: uppercase;
   }
+
   .input {
     display: flex;
     align-items: center;
+
     input {
       padding: 10px;
       margin: 5px;
@@ -23,11 +25,11 @@
       border: none;
       cursor: pointer;
       border-radius: 5px;
-  
+
       &:hover {
         background-color: #fff;
         color: rgb(47, 136, 238);
-        border:rgb(47, 136, 238);
+        border: rgb(47, 136, 238);
       }
     }
   }

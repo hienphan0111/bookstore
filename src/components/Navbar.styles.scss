@@ -3,7 +3,6 @@
 .navbar-container {
   display: flex;
   flex-direction: column;
-  
 
   .bar {
     display: flex;
@@ -22,9 +21,5 @@
         color: #000;
       }
     }
-  }
-
-  .outlet {
-    padding: 50px;
   }
 }
