@@ -1,7 +1,7 @@
 import Book from 'components/Book.component';
 import Form from 'components/Form.component';
 
-const Books = () => {
+function Books() {
   const books = [
     {
       id: 0,
@@ -18,6 +18,6 @@ const Books = () => {
       <Form />
     </div>
   );
-};
+}
 
 export default Books;
