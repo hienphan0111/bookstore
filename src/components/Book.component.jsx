@@ -6,7 +6,7 @@ import './Book.styles.scss';
 function Book({ book }) {
   const { title, author } = book;
   const dispatch = useDispatch();
-
+  console.log(book.item_id);
   return (
     <div className="book-container">
       <div className="info">
