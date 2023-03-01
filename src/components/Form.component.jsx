@@ -1,21 +1,20 @@
-import { useDispatch } from 'react-redux';
-import { addBook } from 'redux/books/booksSlice';
+// import { useDispatch } from 'react-redux';
 import { useState } from 'react';
-import { v4 as uuidv4 } from 'uuid';
+// import { v4 as uuidv4 } from 'uuid';
 import './form.styles.scss';
 
 function Form() {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
 
-  const book = {
-    item_id: '',
-    title: '',
-    author: '',
-    category: 'default',
-  };
+  // const book = {
+  //   item_id: '',
+  //   title: '',
+  //   author: '',
+  //   category: 'default',
+  // };
 
   const resetInput = () => {
     setTitle('');
@@ -25,12 +24,12 @@ function Form() {
   const submitHandler = (e) => {
     e.preventDefault();
     if (title && author) {
-      dispatch(addBook({
-        ...book,
-        item_id: uuidv4(),
-        title,
-        author,
-      }));
+      // dispatch(addBook({
+      //   ...book,
+      //   item_id: uuidv4(),
+      //   title,
+      //   author,
+      // }));
       resetInput();
     }
   };
