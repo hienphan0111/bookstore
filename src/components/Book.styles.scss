@@ -2,24 +2,90 @@
   padding: 10px;
   margin: 15px 10px;
   background-color: #fff;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0, rgba(27, 31, 35, 0.15) 0 0 0 1px;
 
-  button {
-    padding: 10px 25px;
-    font-family: 'Heebo', sans-serif;
-    background-color: rgb(47, 136, 238);
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+  .sec-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
-    &:hover {
-      background-color: #fff;
-      color: rgb(47, 136, 238);
-      border: rgb(47, 136, 238);
+    h3 {
+      margin: 0;
+      padding-top: 10px;
     }
+
+    .info {
+      padding-left: 15px;
+
+      .category {
+        font-weight: 400;
+        color: #12121234;
+      }
+
+      .author {
+        color: #4386bf;
+      }
+    }
+
+    .btn-book {
+      display: flex;
+      padding-top: 20px;
+      button {
+        background-color: #fff;
+        border: none;
+        color: #4386bf;
+        border-right: 1px solid #4386bf;
+        padding-right: 15px;
+        margin: 5px;
+      }
+
+      button:last-child {
+        border: none;
+      }
+    }
+  }
+
+  .sec-2 {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    border-right: 1px solid #4949492e;
+    .progressbar {
+      margin-right: 20px;
+    }
+
+    h4 {
+      margin: 0;
+      padding: 0;
+      font-size: 22px;
+    }
+  }
+
+  .sec-3 {
+    margin-left: 15px;
+    h4 {
+      margin: 0;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 25px;
+      font-family: 'Heebo', sans-serif;
+      background-color: rgb(47, 136, 238);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+  
+      &:hover {
+        background-color: #fff;
+        color: rgb(47, 136, 238);
+        border: rgb(47, 136, 238);
+      }
+    }
+
   }
 }

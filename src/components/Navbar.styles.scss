@@ -7,6 +7,12 @@
   .bar {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
+    .menu {
+      display: flex;
+      align-items: center;
+    }
 
     h1 {
       padding: 10px;
@@ -21,5 +27,11 @@
         color: #000;
       }
     }
+  }
+
+  .i-user {
+    width: 34px;
+    margin-right: 50px;
+    cursor: pointer;
   }
 }
