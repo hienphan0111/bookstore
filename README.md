@@ -14,9 +14,7 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
+  - [🛠 Built With](#built-with)  
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -40,8 +38,8 @@ This App allow users search and read books that they want.
 
 ## 🛠 Built With <a name="built-with"></a>
 
-### Tech Stack <a name="tech-stack"></a>
-
+* [![React][React.js]][React-url]
+* [![Redux][redux.js.org]][Redux-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -106,13 +104,6 @@ Example command:
 
 The project was deployed which you can access this link: 
 
-<!--
-Example:
-
-```sh
-
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -133,6 +124,8 @@ Example:
 
 - [ ] **Display board**
 - [ ] **Searching books**
+- [ ] **Add book**
+- [ ] **Remove book**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
