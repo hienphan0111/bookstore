@@ -7,6 +7,31 @@
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0, rgba(27, 31, 35, 0.15) 0 0 0 1px;
 
+  .sec-3 {
+    margin-left: 15px;
+
+    h4 {
+      margin: 0;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 25px;
+      font-family: 'Heebo', sans-serif;
+      background-color: rgb(47, 136, 238);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: #fff;
+        color: rgb(47, 136, 238);
+        border: rgb(47, 136, 238);
+      }
+    }
+  }
+
   .sec-1 {
     display: flex;
     flex-direction: column;
@@ -33,6 +58,7 @@
     .btn-book {
       display: flex;
       padding-top: 20px;
+
       button {
         background-color: #fff;
         border: none;
@@ -53,6 +79,7 @@
     align-items: center;
     margin-right: 20px;
     border-right: 1px solid #4949492e;
+
     .progressbar {
       margin-right: 20px;
     }
@@ -62,30 +89,5 @@
       padding: 0;
       font-size: 22px;
     }
-  }
-
-  .sec-3 {
-    margin-left: 15px;
-    h4 {
-      margin: 0;
-    }
-
-    button {
-      margin-top: 15px;
-      padding: 10px 25px;
-      font-family: 'Heebo', sans-serif;
-      background-color: rgb(47, 136, 238);
-      color: #fff;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-  
-      &:hover {
-        background-color: #fff;
-        color: rgb(47, 136, 238);
-        border: rgb(47, 136, 238);
-      }
-    }
-
   }
 }
