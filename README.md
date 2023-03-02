@@ -14,6 +14,7 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
+  - [🛠 Built With](#features) 
   - [🛠 Built With](#built-with)  
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
@@ -36,10 +37,16 @@
 
 This App allow users search and read books that they want.
 
+## 🔭 Features <a name="features"></a>
+- [ ] **Display board**
+- [ ] **Searching books**
+- [ ] **Add book**
+- [ ] **Remove book**
+
 ## 🛠 Built With <a name="built-with"></a>
 
 * [![React][React.js]][React-url]
-* [![Redux][redux.js.org]][Redux-url]
+* [![Redux][redux.js]][Redux-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,10 +129,7 @@ The project was deployed which you can access this link:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Display board**
-- [ ] **Searching books**
-- [ ] **Add book**
-- [ ] **Remove book**
+- [ ] **User login**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -156,3 +160,10 @@ This project is contributed under [GNU 3.0](./LICENSE.md) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[Redux.js]: https://img.shields.io/badge/-Redux-20232A?style=for-the-badge&logo=redux&logoColor=violet
+[Redux-url]: http://redux.js.org
