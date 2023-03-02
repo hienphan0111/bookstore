@@ -7,16 +7,19 @@ import './books.styles.scss';
 
 function Books() {
   const dispatch = useDispatch();
+  const bookStatus = useSelector((state) => state.books.status);
   useEffect(() => {
-    dispatch(getBooks());
-  }, []);
+    if (bookStatus === 'update') {
+      dispatch(getBooks());
+    }
+  }, [bookStatus]);
 
   const { booksGallery } = useSelector((state) => state.books);
-  console.log(booksGallery);
+  const keys = Object.keys(booksGallery);
   return (
     <div className="books">
       {
-        booksGallery.map((book) => (<Book key={book.item_id} book={book} />))
+        keys.map((key) => (<Book key={key} book={booksGallery[key][0]} id={key} />))
       }
       <Form />
     </div>

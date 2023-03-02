@@ -8,25 +8,35 @@ const API_URL = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/book
 
 const initialState = {
   booksGallery: [],
-  loading: false,
+  status: 'update',
 };
 
 export const getBooks = createAsyncThunk(
   'books/getBooks',
-  async (thunkAPI) => {
+  async () => {
     const res = await axios.get(API_URL);
-    return Object.values(res.data).flat();
+    return res.data;
   },
 );
 
 export const addBook = createAsyncThunk(
   'books/addBooks',
   async (book, thunkAPI) => {
-    console.log('before');
     try {
-      console.log(book);
       const res = await axios.post(API_URL, book);
-      return book;
+      return res.status;
+    } catch (e) {
+      return thunkAPI.rejectWithValue({ error: e.message });
+    }
+  },
+);
+
+export const deleteBook = createAsyncThunk(
+  'books/deteteBook',
+  async (id, thunkAPI) => {
+    try {
+      const res = await axios.delete(`${API_URL}/${id.item_id}`);
+      return res.status;
     } catch (e) {
       return thunkAPI.rejectWithValue({ error: e.message });
     }
@@ -48,22 +58,25 @@ const booksSlice = createSlice({
       };
     },
   },
-  extraReducers: {
-    [getBooks.pending]: (state) => {
-      state.loading = true;
-    },
-    [getBooks.fulfilled]: (state, { payload }) => {
-      state.booksGallery = payload;
-    },
-    [getBooks.rejected]: (state) => {
-      state.loading = false;
-    },
-    [addBook.fulfilled]: (state, { payload }) => {
-      console.log(payload);
-      state.booksGallery = [...state.booksGallery, payload];
-    },
+  extraReducers(builder) {
+    builder
+      .addCase(getBooks.pending, (state) => {
+        state.status = 'pending';
+      })
+      .addCase(getBooks.fulfilled, (state, { payload }) => {
+        state.booksGallery = payload;
+        state.status = 'complete';
+      })
+      .addCase(addBook.fulfilled, (state) => {
+        state.status = 'update';
+      })
+      .addCase(deleteBook.fulfilled, (state) => {
+        state.status = 'update';
+      });
   },
 });
+
+// export const getStatus = (state) => state.books.status;
 
 export const { setBooks, removeBook } = booksSlice.actions;
 
