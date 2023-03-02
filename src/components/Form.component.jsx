@@ -1,7 +1,8 @@
-import { useDispatch } from 'react-redux';
-import { addBook } from 'redux/books/booksSlice';
+// import { useDispatch } from 'react-redux';
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
+import { addBook } from 'redux/books/booksSlice';
 import './form.styles.scss';
 
 function Form() {
@@ -9,28 +10,23 @@ function Form() {
 
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
-
-  const book = {
-    item_id: '',
-    title: '',
-    author: '',
-    category: 'default',
-  };
+  const [category, setCategory] = useState('');
 
   const resetInput = () => {
     setTitle('');
     setAuthor('');
   };
 
-  const submitHandler = (e) => {
+  const submitHandler = async (e) => {
     e.preventDefault();
-    if (title && author) {
-      dispatch(addBook({
-        ...book,
+    if (title && author && category) {
+      const item = {
         item_id: uuidv4(),
         title,
         author,
-      }));
+        category,
+      };
+      dispatch(addBook(item));
       resetInput();
     }
   };
@@ -53,6 +49,13 @@ function Form() {
           placeholder="Book author"
           required
         />
+        <select value={category} onChange={(e) => setCategory(e.target.value)} placeholder="...Choose categories">
+          <option value="Fiction">Fiction</option>
+          <option value="Nonfiction">Nonfiction</option>
+          <option value="History">History</option>
+          <option value="Psychology">Psychology</option>
+          <option value="Personal growth">Personal Growth</option>
+        </select>
         <button type="submit">Add book</button>
       </div>
     </form>
