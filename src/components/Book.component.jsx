@@ -30,11 +30,11 @@ function Book({ book, id }) {
         <CircularProgress className="progressbar" size="80px" variant="determinate" value={75} />
         <div>
           <h4>64%</h4>
-          <span>Completed</span>
+          <span className="status">Completed</span>
         </div>
       </div>
       <div className="sec-3">
-        <span>Current chapter</span>
+        <span className="current-chapter">Current chapter</span>
         <h4>Chapter 17</h4>
         <button type="button">update progress</button>
       </div>

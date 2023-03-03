@@ -1,31 +1,68 @@
 .add-book {
+  $--azure: #0290ff;
+  $--white-two: #fff;
+  $--white: #e8e8e8;
+  $--very-light-pink: #c4c4c4;
+
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  margin: 1.18rem 6.25rem 16.5rem 6.25rem;
   padding: 10px;
 
   .form-title {
     text-transform: uppercase;
+    margin: 1.813rem 32.75rem 1.188rem 0;
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.18px;
+    color: #888;
   }
 
   .input {
     display: flex;
     align-items: center;
+    width: 100%;
 
     input,
     select {
-      padding: 10px;
-      margin: 5px;
+      width: 100%;
+      margin: 1.188rem 2.125rem 0 0;
+      padding: 0.813rem 0 0.813rem 1.063rem;
+      border-radius: 4px;
+      border: solid 1px $--white;
+      background-color: $--white-two;
+      font-family: Montserrat;
+      font-size: 1rem;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.15px;
+      color: $--very-light-pink;
     }
 
     button {
-      padding: 10px 25px;
-      font-family: 'Heebo', sans-serif;
-      background-color: rgb(47, 136, 238);
-      color: #fff;
       border: none;
       cursor: pointer;
-      border-radius: 5px;
+      width: 60%;
+      height: 2.813rem;
+      margin-top: 1.188rem;
+      padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+      border-radius: 3px;
+      background-color: $--azure;
+      font-family: 'Roboto Slab';
+      font-size: 0.813rem;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.5px;
+      text-align: center;
+      color: $--white-two;
 
       &:hover {
         background-color: #fff;
