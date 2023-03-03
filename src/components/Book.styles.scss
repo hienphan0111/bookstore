@@ -23,7 +23,7 @@
     .current-chapter {
       text-transform: uppercase;
       opacity: 0.5;
-      font-family: 'Roboto Slab';
+      font-family: 'Roboto Slab', serif;
       font-size: 0.813rem;
       font-weight: 300;
       font-stretch: normal;
@@ -34,8 +34,8 @@
     }
 
     h4 {
-      margin: 0.438rem 0.3rem 0.25rem 0rem;
-      font-family: 'Roboto Slab';
+      margin: 0.438rem 0.3rem 0.25rem 0;
+      font-family: 'Roboto Slab', serif;
       font-size: 1rem;
       font-weight: 300;
       font-stretch: normal;
@@ -48,7 +48,7 @@
     button {
       width: 11.5rem;
       height: 2.063rem;
-      font-family: 'Roboto Slab';
+      font-family: 'Roboto Slab', serif;
       font-size: 0.813rem;
       font-weight: 300;
       font-stretch: normal;
@@ -60,7 +60,7 @@
       color: $--white-two;
       border: none;
       cursor: pointer;
-      margin: 0.75rem 1.75rem 0.563rem 0rem;
+      margin: 0.75rem 1.75rem 0.563rem 0;
       padding: 0.438rem 1.188rem 0.5rem 1.375rem;
       border-radius: 3px;
       background-color: $--azure;
@@ -81,7 +81,7 @@
 
     h3 {
       margin: 0;
-      font-family: 'Roboto Slab';
+      font-family: 'Roboto Slab', serif;
       font-size: 1.375rem;
       font-weight: bold;
       font-stretch: normal;
@@ -99,7 +99,7 @@
         height: 1.125rem;
         margin: 0 2.438rem 0 0;
         opacity: 0.5;
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
         font-size: 0.875rem;
         font-weight: bold;
         font-stretch: normal;
@@ -111,7 +111,7 @@
 
       .author {
         margin: 0.25rem 0 0;
-        font-family: 'Roboto Slab';
+        font-family: 'Roboto Slab', serif;
         font-size: 0.875rem;
         font-weight: 300;
         font-stretch: normal;
@@ -131,7 +131,7 @@
         border-right: 1px solid #4386bf;
         margin: 0.188rem 0.938rem 0.125rem 0;
         padding-right: 1rem;
-        font-family: 'Roboto Slab';
+        font-family: 'Roboto Slab', serif;
         font-size: 0.875rem;
         font-weight: 300;
         font-stretch: normal;
@@ -159,20 +159,20 @@
 
     h4 {
       margin: 0.063rem 4.063rem 0 0.688rem;
-      font-family: Montserrat;
+      font-family: 'Montserrat', sans-serif;
       font-size: 2rem;
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
       line-height: normal;
       letter-spacing: normal;
-      color: --black-two;
+      color: $--black-two;
     }
 
     .status {
       margin: 0.438rem 0 0.75rem 0.75rem;
       opacity: 0.5;
-      font-family: Montserrat;
+      font-family: 'Montserrat', sans-serif;
       font-size: 0.875rem;
       font-weight: normal;
       font-stretch: normal;
