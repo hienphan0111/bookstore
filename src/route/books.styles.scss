@@ -1,4 +1,11 @@
 .books {
-  padding: 50px;
   background-color: rgba(6, 6, 6, 0.036);
+  padding-top: 2rem;
+
+  hr {
+    margin: 50px 6.25rem 0 6.25rem;
+    color: rgba(117, 113, 113, 0.158);
+    border: none;
+    border-bottom: 1px solid rgba(84, 82, 82, 0.332);
+  }
 }

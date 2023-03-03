@@ -21,6 +21,7 @@ function Books() {
       {
         keys.map((key) => (<Book key={key} book={booksGallery[key][0]} id={key} />))
       }
+      <hr />
       <Form />
     </div>
   );

@@ -1,25 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 .navbar-container {
+  $--azure: #0290ff;
+  $--black-two: #121212;
+  $--white-two: #fff;
+
   display: flex;
   flex-direction: column;
 
   .bar {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 6.188rem 0 6.25rem;
+    background-color: $--white-two;
+
+    .menu {
+      display: flex;
+      align-items: center;
+    }
 
     h1 {
       padding: 10px;
-      font-family: 'Rubik Mono One', sans-serif;
-      color: rgb(9, 84, 169);
+      width: 15rem;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.875rem;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $--azure;
     }
 
     .links {
       .link {
         padding: 10px;
         text-decoration: none;
-        color: #000;
+        text-transform: uppercase;
+        width: 3.688rem;
+        height: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.813rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 1.9px;
+        color: $--black-two;
       }
     }
+  }
+
+  .i-user {
+    width: 34px;
+    cursor: pointer;
   }
 }
